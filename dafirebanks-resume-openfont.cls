@@ -71,8 +71,7 @@
 \usepackage{fontspec}
 \setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
-\defaultfontfeatures{Path = .}
-\newfontfamily{\FA}{FontAwesome}
+\newfontfamily\FA[Path=.,Extension=.otf]{FontAwesome}
 \usepackage{fontawesome}
 
 % Set spacing depending on the amount of text
