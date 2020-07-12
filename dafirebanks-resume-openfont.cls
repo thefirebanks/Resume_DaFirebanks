@@ -9,7 +9,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-
+\fontspec [ Path = fonts/ ]
 % %%%%%%%%%%%%%%%%
 
 
