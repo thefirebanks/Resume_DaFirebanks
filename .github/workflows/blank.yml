@@ -7,7 +7,8 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v1
       - name: Compile LaTeX document
-        uses: dante-ev/latex-action@v0.2.0
+        uses: xu-cheng/latex-action@v2
         with:
           root_file: dafirebanks_resume-openfont.tex
-          args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode -output-directory=. 
+          latexmk_use_xelatex: true
+          args: -output-directory=fonts/ 
