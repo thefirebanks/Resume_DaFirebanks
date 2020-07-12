@@ -49,8 +49,8 @@
 % }
 
 % %%%%%%%%%%%%%%%
-\usepackage{fontspec}
-\fontspec [ Path = fonts/ ]
+% \usepackage{fontspec}
+% \fontspec [ Path = fonts/ ]
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
