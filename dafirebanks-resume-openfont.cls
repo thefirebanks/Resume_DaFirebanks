@@ -49,14 +49,11 @@
 % }
 
 % %%%%%%%%%%%%%%%
-\usepackage{fontspec}
-\defaultfontfeatures{Path = .}
+
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
 \usepackage[hidelinks]{hyperref}
-\usepackage{fontawesome}
-\newfontfamily{\FA}{FontAwesome}
 
 % Publications
 \usepackage{cite}
@@ -74,6 +71,9 @@
 \usepackage{fontspec}
 \setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
+\defaultfontfeatures{Path = .}
+\newfontfamily{\FA}{FontAwesome}
+\usepackage{fontawesome}
 
 % Set spacing depending on the amount of text
 \linespread{1.05}
