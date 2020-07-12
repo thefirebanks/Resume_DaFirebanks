@@ -7,8 +7,9 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v1
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+        uses: vinay0410/tectonic-action@master
+        env: 
+          ${{ secrets.GITHUB_TOKEN }}
         with:
-          root_file: dafirebanks_resume-openfont.tex
-          latexmk_use_xelatex: true
-          args: -output-directory=fonts/ 
+          tex_path: 'dafirebanks_resume-openfont.tex'
+          push: 'yes'
