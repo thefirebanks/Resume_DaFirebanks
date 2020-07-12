@@ -1,0 +1,329 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Daniel Firebanks - Based off of "Deedy - One Page Two Column Resume"
+% LaTeX Template
+% - Added commands for links and information at the top bar + icons
+% - Changed color, spacing and placement of dates/position
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{dafirebanks-resume-openfont}
+
+\usepackage{ragged2e}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Daniel}{Firebanks-Quevedo}{
+\git{http://github.com/thefirebanks}{thefirebanks} | \email{dfireban@oberlin.edu}{dfireban@oberlin.edu} | 
+\phone{202-294-9862} | \linkedin{https://www.linkedin.com/in/firebanks}{firebanks}
+}
+
+%\headerbro{John}{Smith}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} \vspace{-3pt}
+{\color{blue}\hrule width 88pt}\vspace{5pt}
+\subsection{B.A in Computer Science (CS)}
+\descript{Oberlin College}\\
+\location{Expected May 2020 | Oberlin, OH}
+Minor in \underline{Mathematics} \\ 
+\location{ GPA: 3.56/ 4.0}
+
+\subsection{\\Study Abroad}
+\descript{University of Technology and Economics  (BME)}\\
+\location{Jan-May 2019 | Budapest, Hungary}
+
+\subsection{\\International Baccalaureate}
+\descript{United World College USA\\}
+\location{May 2016 | Montezuma, NM}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\vspace{-3pt}
+{\color{blue}\hrule width 45pt} \vspace{5pt}
+\subsection{Programming}
+Python / Java / C++ / Javascript \\
+C\# / Bash / R / SQL / \LaTeX
+
+\sectionsep 
+\subsection{Tools and Frameworks}
+Docker / Git / Node.js / TensorFlow
+\sectionsep
+\subsection{Languages}
+Spanish, English, French, Hungarian
+\sectionsep 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\vspace{-3pt}
+{\color{blue} \hrule width 107pt} \vspace{5pt}
+Advanced Algorithms \\
+Systems Programming \\
+% Computer Organization\\
+Economics and Computation \\
+Computational Biology\\
+% Cognitive Neuroscience\\
+Machine Learning\\
+% Programming Languages \\
+Complex Networks Science \\
+Non-linear Optimization\\
+Multivariable Calculus \\
+Linear Algebra \\ 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     INTERESTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interests}
+\vspace{-3pt}
+{\color{blue}\hrule width 78pt \vspace{5pt}}
+Photography \textbullet{} Stand-up comedy \\   
+\textbullet{} Jazz/Classical Guitar \textbullet{} Cooking\\ 
+Close-up Magic \textbullet{} Latin Dancing \\
+\textbullet{} Behavioral/Dev. Economics\\  
+ Outdoor recreation
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACTIVITIES 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Activities}
+\vspace{-3pt}
+{\color{blue}\hrule width 78pt \vspace{5pt}}
+Computer Science Majors Committee \\ Member \textbullet{} International Student \\ Organization Treasurer 
+\textbullet{} Lab Tutor \\
+\textbullet{} Technology consultant
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-1.2pt}
+\section{Experience}
+\vspace{-3pt}
+{\color{blue}\hrule} \vspace{5pt}
+
+\runsubsection{Machine Learning Research Intern}
+\hspace{71pt}
+\location{Jun 2019 - Aug 2019}
+\descript{IBM Research}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\item Implemented a paraphrase generation framework in \textbf{TensorFlow} using\textbf{ deep reinforcement learning} for the training of intelligent conversational agents in IT support systems.
+	\item Adapted \textbf{Transfer Learning and Seq2Seq} abstractive summarization techniques for data augmentation of IT service requests.
+	\item Surveyed and tested the limitations of 5 state-of-the-art \textbf{text generation} methods on domain adaptation tasks with small datasets.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Data Science Intern} 
+\hspace{153pt} \location{Jun 2018 - Aug 2018}
+%\newline
+\descript{Public Company Accounting Oversight Board (PCAOB)} 
+%\hspace{30pt} 
+%\newline
+\location{}
+
+\begin{tightemize}
+    \item Wrote a parser in \textbf{C\# to extract text} while maintaining logical structure from thousands of non-standardized HTML documents, increasing accuracy from \textbf{47\% to 78\%}.
+    \item Trained a Conditional Random Fields (\textbf{CRF}) model to identify structure and extract text from accounting statements.
+	\item Built tools that automated cleaning, merging, and query-based retrieval of financial/accounting data for text analysis and risk prediction.
+\end{tightemize}
+% \vspace{1pt}
+\sectionsep
+
+\runsubsection{Research Assistant}
+\hspace{160pt}
+\location{Aug 2017 - Present}
+\descript{Oberlin College}
+\begin{tightemize}
+	\item  Researching \textbf{Partially Observable Markov Decision Processes} for scalable multi-agent reasoning in open environments with \textbf{\href{http://www.cs.oberlin.edu/~aeck/}{Dr. Adam Eck}}.
+	\item Formulating new generalizations of \textbf{Monte Carlo Tree Search} in \textbf{resource allocation and adversary mitigation problems}, within the domains of cybersecurity, bioinformatics, and Starcraft 2 (SC2).
+	\item Engineering cyber attack \textbf{simulations} on server farms for benchmarking intelligent agents' performance.
+	\item Created a framework to build intelligent bots through the \textbf{Python (PySC2) and Java SC2 APIs} that uses the Raw Interface of the game. 
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Computer Science Teaching Assistant} 
+% \hspace{60pt}
+% \location{Aug 2017 - Present}
+% \descript{Oberlin College} \location{} 
+% \begin{tightemize}
+% 	\item Engaging in weekly lab tutoring sessions to groups of 20-25 students, for the classes \textit{Introduction to CS, Data Structures and Systems Programming.}
+% \end{tightemize}
+% \sectionsep
+
+
+% \runsubsection{Computer Science Teaching Assistant} 
+% \hspace{60pt}
+% \location{Aug 2017 - Present}
+% \descript{Oberlin College} \location{} 
+% \begin{tightemize}
+% 	\item Engaging in weekly lab tutoring sessions for groups of 20-25 students, by assisting them in developing software design proficiency, identifying/resolving bugs, and peer programming. 
+% 	\item Classes: \textit{Introduction to CS, Data Structures and Systems Programming.}
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\vspace{-3pt}
+{\color{blue}\hrule} \vspace{5pt}
+
+%%%%%%%%%%%%%%%%%
+%% For ML/Research jobs
+%%%%%%%%%%%%%%%%%
+
+\runsubsection{Automated Social Choice Mechanism Design}\\
+\descript{Honors Candidate, Oberlin College} 
+\hspace{85pt} \location{Jul 2019 –  Present}
+\begin{tightemize}
+	\item Building a neural network-based framework to automatically design new voting mechanisms in distinct environments for a decision-making tool.
+% 	\item Building a pipeline that aims to introduce real behavior models in the design of incetive compatible mechanisms without money.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%
+%% For bio jobs
+%%%%%%%%%%%%%%%%%
+
+% \runsubsection{Centrality in Protein Interaction Networks}\\
+% \descript{Researcher, BME} 
+% \hspace{175pt} \location{Mar 2019 –  Present}
+% \begin{tightemize}
+% 	\item Applying novel network centrality measures to detect the most essential proteins in neurodegenerative diseases for treatment design.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%
+%% For SWE jobs
+%%%%%%%%%%%%%%%%%
+
+
+% \runsubsection{Auromated Credit Writer????}\\
+% \descript{Software Developer, Remote} 
+% \hspace{100pt} \location{August 2019 –  Present}
+% \begin{tightemize}
+% 	\item Applying novel network centrality measures to detect the most essential proteins in neurodegenerative diseases for treatment design.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%
+%% General
+%%%%%%%%%%%%%%%%%
+
+\runsubsection{MindPair AI}\\
+\descript{Data Engineer, Remote} 
+\hspace{130pt} \location{Jan 2019 –  March 2019}
+\begin{tightemize}
+	\item Developed a web scrapper using \textbf{Selenium} to automatically extract basic information, topics and reviews from all Coursera courses.
+	\item Performed \textbf{sentiment analysis and topic modeling} on course reviews for a recommender system that matches courses with desired skills. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Offensive Language Detection in Tweets}\\
+\descript{Lead Developer, Oberlin College} 
+\hspace{90pt} \location{Aug 2017 –  Dec 2018}
+\begin{tightemize}
+	\item Designed and implemented an ensemble learning model to classify hate-speech and offensive language in tweets using \textbf{Scikit-learn} and \textbf{Keras}, achieving near state-of-the-art results.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%
+%% For NLP jobs
+%%%%%%%%%%%%%%%%%
+
+% \runsubsection{Sentiment Analysis of Viral Tweets}\\
+% \descript{Summer Researcher, Oberlin College}
+% \hspace{75pt}\location{Jun 2017 – Jul 2017}
+% \begin{tightemize}
+% 	\item Analyzed 300,000 tweets from a large group of scientists for changes in sentiment and its possible effects on virality.
+% 	\item Applied Naive Bayes, SVM, and natural language processing techniques.
+% \end{tightemize}
+% \sectionsep
+\end{minipage} 
+\end{document}
