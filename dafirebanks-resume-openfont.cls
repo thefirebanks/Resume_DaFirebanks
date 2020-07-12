@@ -50,7 +50,7 @@
 
 % %%%%%%%%%%%%%%%
 \usepackage{fontspec}
-\defaultfontfeatures{Path = /usr/local/texlive/2019/texmf-dist/fonts/opentype/public/fontawesome/}
+\defaultfontfeatures{Path = .}
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
